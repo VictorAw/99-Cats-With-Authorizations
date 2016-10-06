@@ -1,0 +1,19 @@
+<label for="new_user_title">
+<h3>New User</h3>
+</label>
+
+<%= render "shared/credentials", action: users_url, username_name: "user[user_name]", password_name: "user[password]" %>
+
+<!-- <form action=<%= users_url %> method="POST">
+  <input type="hidden" name="authenticity_token" value=<%= form_authenticity_token %>>
+
+  <label for="user_name">Username</label>
+  <input type="text" value="" name="user[user_name]" id="user_name">
+
+  <br>
+  <label for="user_password">Password</label>
+  <input type="password" value="" name="user[password]" id="user_password">
+
+  <br>
+  <button type="submit">Submit</button>
+</form> -->
